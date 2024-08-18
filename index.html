@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>د. [نهر إبراهيم صالح ] - أخصائية طب الأسنان</title>
+    <link rel="stylesheet" href="page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="logo.png">
+</head>
+<body>
+    <header class="fixed-header">
+        <div class="container">
+            <div class="logo"><img src="logo.png" alt="لوجو الطبيبة"></div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">الرئيسية</a></li>
+                    <li><a href="#about">عن الطبيبة</a></li>
+                    <li><a href="#services">الخدمات</a></li>
+                    <li><a href="#contact">تواصل معنا</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home">
+        <div class="home-content">
+            <img src="nahr.jpg" alt="صورة الطبيبة" class="doctor-photo">
+            <h1>د. [نهر إبراهيم صالح]</h1>
+            <p>أخصائية طب الأسنان التجميلي</p>
+            <a href="#contact" class="btn">احجز موعدًا</a>
+        </div>
+    </section>
+
+    <section id="about" class="section-padding">
+        <div class="container">
+            <h2>عن الطبيبة</h2>
+            <p>   دكتورة متخصصه في طب الأسنان التجميلي مع خبرة كبيره حصلت علي شهادتها من جامعة درايا بتقدير عام امتياز مع مرتبة الشرف وتدربت علي احدث التقنيات العلاجيه .</p>
+        </div>
+    </section>
+
+    <section id="services" class="section-padding">
+        <div class="container">
+            <h2>الخدمات</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <i class="fas fa-tooth"></i>
+                    <h3>تنظيف الأسنان</h3>
+                    
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-tooth"></i>
+                    <h3>تبييض الأسنان</h3>
+                    
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-tooth"></i>
+                    <h3>تقويم الأسنان</h3>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section-padding">
+        <div class="container">
+            <h2>تواصل معنا</h2>
+            <form action="submit-form.php" method="post">
+                <input type="text" name="name" placeholder="الاسم" required>
+                <input type="email" name="email" placeholder="البريد الإلكتروني" required>
+                <textarea name="message" placeholder="رسالتك" required></textarea>
+                <button type="submit" class="btn">إرسال</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 جميع الحقوق محفوظة | د. [نهر إبراهيم صالح]</p>
+        </div>
+    </footer>
+</body>
+</html>

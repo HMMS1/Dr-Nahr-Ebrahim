@@ -1,0 +1,257 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* إعدادات عامة */
+body {
+    font-family: 'Tajawal', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f5f7; /* خلفية رمادية فاتحة */
+    color: #333; /* لون النص */
+    direction: rtl;
+    text-align: right;
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+/* شريط التنقل */
+.fixed-header {
+    background-color: #1c3d5a; /* أزرق داكن */
+    color: white;
+    padding: 10px 0; /* تقليل حجم البادينغ */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.fixed-header .logo img {
+    height: 40px; /* تصغير حجم اللوغو */
+    width: auto;
+}
+
+.fixed-header nav ul.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.fixed-header nav ul.nav-links li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 10px; /* تقليل حجم البادينغ */
+    font-size: 1rem; /* تصغير حجم الخط */
+    transition: background-color 0.3s ease;
+}
+
+.fixed-header nav ul.nav-links li a:hover {
+    background-color: #145374; /* أزرق أغمق */
+    border-radius: 5px;
+}
+
+/* قسم الرئيسية */
+#home {
+    height: 100vh;
+    background: linear-gradient(rgba(28, 61, 90, 0.7), rgba(28, 61, 90, 0.7)), url('dental-background.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.home-content {
+    max-width: 500px; /* تصغير العرض */
+    margin: auto;
+}
+
+.home-content .doctor-photo {
+    border-radius: 50%;
+    border: 4px solid #2a9d8f; /* أخضر زمردي */
+    width: 120px; /* تصغير حجم الصورة */
+    height: 120px;
+    margin-bottom: 15px;
+}
+
+.home-content h1 {
+    font-size: 2rem; /* تصغير حجم العنوان */
+    margin-bottom: 10px;
+}
+
+.home-content p {
+    font-size: 1rem; /* تصغير حجم النص */
+    margin-bottom: 15px;
+}
+
+.home-content .btn {
+    padding: 8px 15px; /* تصغير حجم الأزرار */
+    background-color: #e9c46a; /* ذهبي فاتح */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9rem; /* تصغير حجم النص */
+    transition: background-color 0.3s ease;
+}
+
+.home-content .btn:hover {
+    background-color: #e76f51; /* برتقالي داكن */
+}
+
+/* الأقسام */
+.section-padding {
+    padding: 50px 0; /* تقليل البادينغ بين الأقسام */
+}
+
+h2 {
+    font-size: 1.8rem; /* تصغير حجم العناوين */
+    margin-bottom: 15px;
+    text-align: center;
+    color: #1c3d5a; /* أزرق داكن */
+}
+
+p {
+    text-align: center;
+    font-size: 1rem; /* تصغير حجم النص */
+    line-height: 1.4; /* تقليل التباعد بين الأسطر */
+    max-width: 700px; /* تصغير العرض */
+    margin: 0 auto;
+}
+
+/* الخدمات */
+.services-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 15px; /* تقليل المسافات بين العناصر */
+}
+
+.service-item {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px; /* تقليل البادينغ */
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 280px; /* تقليل عرض العناصر */
+    transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+}
+
+.service-item i {
+    font-size: 1.8rem; /* تصغير حجم الأيقونات */
+    color: #2a9d8f; /* أخضر زمردي */
+    margin-bottom: 8px;
+}
+
+.service-item h3 {
+    font-size: 1.3rem; /* تصغير حجم العناوين */
+    margin-bottom: 8px;
+}
+
+/* تواصل معنا */
+#contact form {
+    max-width: 550px; /* تقليل عرض النموذج */
+    margin: 0 auto;
+}
+
+#contact form input,
+#contact form textarea {
+    width: 100%;
+    padding: 8px; /* تقليل البادينغ */
+    margin-bottom: 10px;
+    border: 1px solid #ced4da; /* لون محايد */
+    border-radius: 5px;
+}
+
+#contact form button {
+    width: 100%;
+    padding: 8px; /* تصغير حجم الزر */
+    background-color: #2a9d8f; /* أخضر زمردي */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9rem; /* تصغير حجم النص */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact form button:hover {
+    background-color: #145374; /* أزرق أغمق */
+}
+
+/* الفوتر */
+footer {
+    background-color: #1c3d5a; /* أزرق داكن */
+    color: white;
+    padding: 15px 0; /* تقليل البادينغ */
+    text-align: center;
+}
+
+/* تصميم مستجيب للأجهزة المختلفة */
+@media (max-width: 768px) {
+    .fixed-header nav ul.nav-links {
+        flex-direction: column;
+    }
+
+    .services-grid {
+        flex-direction: column;
+    }
+
+    .service-item {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 1.8rem; /* تصغير حجم العنوان */
+    }
+
+    p {
+        font-size: 0.9rem; /* تصغير حجم النص */
+    }
+
+    .home-content .doctor-photo {
+        width: 100px; /* تصغير حجم الصورة */
+        height: 100px;
+    }
+
+    .home-content .btn {
+        font-size: 0.8rem; /* تصغير حجم النص في الأزرار */
+    }
+
+    h2 {
+        font-size: 1.3rem; /* تصغير حجم العناوين */
+    }
+
+    .home-content p {
+        font-size: 0.9rem; /* تصغير حجم النص */
+    }
+}
+
+@media (max-width: 480px) {
+    .fixed-header nav ul.nav-links {
+        text-align: center;
+    }
+
+    .home-content .doctor-photo {
+        width: 80px; /* تصغير حجم الصورة */
+        height: 80px;
+    }
+
+    h1 {
+        font-size: 1.5rem; /* تصغير حجم العنوان */
+    }
+
+    p {
+        font-size: 0.8rem; /* تصغير حجم النص */
+    }
+}
